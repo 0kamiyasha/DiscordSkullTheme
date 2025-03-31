@@ -1,0 +1,270 @@
+
+/*
+  ____                   _   _ ______ _     _     
+ |  _ \                 | | (_)  ____(_)   | |    
+ | |_) | ___  __ _ _   _| |_ _| |__   _ ___| |__  
+ |  _ < / _ \/ _` | | | | __| |  __| | / __| '_ \ 
+ | |_) |  __/ (_| | |_| | |_| | |    | \__ \ | | |
+ |____/ \___|\__,_|\__,_|\__|_|_|    |_|___/_| |_|
+
+*/
+
+
+
+/*
+********************************************
+*          Adding background image         *
+********************************************
+*/
+body {
+    background: #fff var(--beautifish-background-image) !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+
+
+/************************************************************************************************/
+/*                                  Start of the customization                                  */
+/************************************************************************************************/
+
+/* Global variable */
+@supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
+    .visual-refresh.theme-dark, .visual-refresh .theme-dark  {
+        /* Making discord mostly transparent */
+        --background-tertiary: var(--beautifish-transparent-primary);
+
+        /* Chat input text background */
+        /* User island background (a.k.a. the card in bottom left with your username) */
+        --bg-overlay-floating: var(--beautifish-primary);
+
+        /* popout secondary color (gif/emot/etc), 
+           server member page, 
+           verser channel search page,
+           shop page
+           embed content
+        */
+        --background-base-lower: var(--beautifish-transparent-secondary);
+        --background-surface-high : var(--beautifish-transparent-tertiary);
+
+        /* Modals 
+            - new event modal, 
+            - invit modal, 
+            - new channel modal, 
+            - folder config modal, 
+            - new server modal
+        */
+        --modal-background: var(--beautifish-primary);
+        --modal-footer-background: var(--beautifish-secondary);
+        --bg-base-secondary: rgba(0, 0, 0, 0);
+
+        /* Profile popout
+           Don't work for nitro users
+         */
+        --bg-surface-overlay: var(--beautifish-secondary); 
+        
+        /* context menu on messag hover (reaction, transmit, actions...) */
+        --background-surface-highest: var(--beautifish-secondary);
+
+
+        /* , context menu (message "+" button, server properties, right click, notifications),  */
+        /* Context menu, including :
+            - message "+" button
+            - server properties,
+            - all right click menu
+            - channel notification setting*
+        Also : 
+            - message in modal (threads, pinned message)
+            - top left icon background 
+        */
+        --background-surface-higher: var(--beautifish-tertiary);
+
+        /* Context information (floating message on hover) */
+        --background-floating: var(--beautifish-tertiary);
+
+
+        /**************
+        * Text colors *
+        **************/
+
+        --header-muted: DeepPink;
+        --header-primary: var(--beautifish-text-primary);
+        --header-secondary: var(--beautifish-text-secondary); /* User status in friend list */
+
+        --text-normal: var(--beautifish-text-primary); /* Message text, server name, header title, server view activity name in activity list */
+        
+        --text-brand: var(--beautifish-text-important);
+        --text-link: var(--beautifish-text-important); /* links */
+        --text-muted: var(--beautifish-text-muted); /* message date, search placeholder, user activity in friends list */
+        
+        --text-feedback-positive: var(--beautifish-text-positive);
+        --text-positive: var(---beautifish-text-positive);
+        --text-warning: var(--beautifish-text-warning);
+        --text-danger: var(--beautifish-text-danger);
+
+        --text-primary: var(--beautifish-text-primary); /* */
+        --text-secondary: var(--beautifish-text-secondary); /* User activities in server user list */
+        --text-tertiary: var(--beautifish-text-tertiary); /* Username in DM list */
+        
+
+        --channels-default: var(--beautifish-text-secondary);
+        --channel-icon: var(--beautifish-icon-secondary); /* Icon of the channels */
+
+        --interactive-muted: var(--beautifish-text-muted); /* Muted channels */
+        --interactive-normal: var(--beautifish-icon-primary); /* a lot of icons */
+        
+        --icon-primary: var(--beautifish-icon-primary); /* member list toggle (when active), current channel icons */
+        --icon-secondary: var(--beautifish-icon-secondary);
+        --icon-tertiary: var(--beautifish-icon-tertiary);
+
+        --button-primary-text: var(--beautifish-button-primary);
+        --button-secondary-text: var(--beautifish-button-secondary);
+        --button-tertiary-text: var(--beautifish-button-tertiary);
+
+        --button-filled-brand-text: var(--beautifish-text-tertiary);
+        --button-filled-brand-background: var(--beautifish-tertiary);
+        --button-secondary-background: var(--beautifish-secondary);
+
+        --button-danger-background: var(--beautifish-text-danger);
+        --button-outline-danger-background: var(--beautifish-secondary);
+    }
+}
+
+
+/* Remove litle shadow in chanel top bar */
+.theme-dark .children__9293f:after {
+    background: none;
+}
+
+/* Emote/Gif/Sticker picker popout */
+.contentWrapper__08434, /* in chat */
+.container__0800c /* in voice channel (tool bar) */
+{
+    --background-base-lower: var(--beautifish-secondary);
+    --background-surface-high : var(--beautifish-secondary);
+}
+
+/* Emote picker footer in voice channel */
+.slotsContainer__0800c {
+    background-color: var(--beautifish-tertiary);
+}
+
+/* Target only the server manangement page "Browse Channels", and "Members" */
+.visual-refresh .page_c48ade>.chat_f75fb0 {
+    --background-base-lower: rgba(0, 0, 0, 0);
+    background: var(--beautifish-transparent-secondary) !important;
+}
+
+/*
+Because soundboard picker use "--background-base-low" variables
+as background color, we need to set manually another color
+*/
+.theme-dark .picker__09f65,
+.theme-midnight .picker__09f65,
+.theme-darker .picker__09f65 {
+    background-color: var(--beautifish-tertiary);
+}
+
+
+/*
+Because card on Apps and Servers discorver page use "--background-base-low" 
+variables as background color, we need to set manually another color 
+*/
+.visual-refresh.theme-dark .card__84e3e,
+.visual-refresh.theme-midnight .card__84e3e,
+.visual-refresh.theme-darker .card__84e3e {
+    background: var(--beautifish-transparent-secondary); 
+}
+/* Guilds bar */
+:root {
+    --guildbar-avatar-size: 48px !important;
+}
+.svg_cc5dd2 foreignObject {
+    mask: none !important;
+    overflow: visible !important;
+    x: -4 !important;
+    y: -4 !important;
+}
+.svg_cc5dd2 foreignObject > img {
+    border-radius: 25px !important;
+    position: relative;
+    top: 4px !important;
+    left: 4px !important;
+    width: 22px !important;
+    height: 22px !important;
+}
+.circularImage__1ce5d {
+    width: 24px !important;
+    height: 24px !important;
+}
+.visual-refresh .svg_cc5dd2 {
+    top: 0px !important;
+    left: 0px !important;
+}
+.childWrapper__6e9f8,
+.icon__6e9f8,
+.circleIconButton__5bc7e {
+    border-radius: 25px !important;
+    transition: all 400ms ease-in-out !important;
+}
+.selected__6e9f8 .childWrapper__6e9f8,
+.selected__6e9f8 .icon__6e9f8,
+.circleIconButton__5bc7e.selected__5bc7e {
+    border-radius: 16px !important;
+    transition: all 400ms ease-in-out !important;
+}
+.childWrapperNoHoverBg__6e9f8 > svg {
+    width: 30px !important;
+    height: 30px !important;
+}
+.wrapper__6e9f8.selected__6e9f8 .childWrapperHoverScale__6e9f8,
+.wrapper__6e9f8:hover .childWrapperHoverScale__6e9f8 {
+    scale: unset;
+}
+.stack_dbd263:has(.guildSeparator__252b6)
+    div[style^="opacity: 1; height: 40px;"] {
+    height: var(--guildbar-avatar-size) !important;
+}
+.scroller_ef3116.none-2-_0dP.scrollerBase-_bVAAt::-webkit-scrollbar {
+    display: none !important;
+}
+.guildSeparator__252b6 {
+    background-color: transparent !important;
+}
+:not(.platform-osx).visual-refresh .guilds_c48ade {
+    padding-top: 10px !important;
+}
+.visual-refresh .wrapper_ef3116 {
+    margin-bottom: 0px !important;
+    z-index: 11 !important;
+}
+/* Server list folders */
+.folder-1hbNCn {
+    background-color: transparent !important;
+}
+.folderIconWrapper-1_bOZe {
+    background-color: var(--beautifish-tertiary) !important;
+}
+.expandedFolderIconWrapper-Huv7rA > svg {
+    color: var(--beautifish-secondary) !important;
+}
+.expandedFolderBackground-1cujaW {
+    background-color: var(--beautifish-tertiary) !important;
+}
+.expandedFolderBackground-1cujaW.collapsed-2ZrjoL,
+.expandedFolderBackground-1cujaW.collapsed-2ZrjoL.hover-qTxTR_ {
+    background-color: transparent !important;
+}
+.expandedFolderIconWrapper__48112 > svg {
+    height: 24px !important;
+    width: 24px !important;
+}
+.visual-refresh .expandedFolderBackground__48112 {
+    border: none !important;
+}
+.visual-refresh .folder__48112.hover__48112 .expandedFolderIconWrapper__48112 {
+    background-color: transparent !important;
+}
+.isExpanded__48112 > ul[id^="folder-items"] {
+    height: auto !important;
+}
