@@ -17374,10 +17374,6 @@ div[class^="textArea_"] span {
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-radius: 12px 12px 0 0 !important;
     margin: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 8px 12px !important;
 }
 
 .wrapper_e131a9 {
@@ -17473,31 +17469,4 @@ div[class^="textArea_"] span {
     border-color: var(--soft-bright-color) !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 12px rgba(22, 91, 123, 0.4) !important;
-}
-
-/* Additional activity panel centering fixes */
-.activityPanel_c48ade .content__2ee44,
-.activityPanel_c48ade .gameDetails__2ee44,
-.activityPanel_c48ade .gameWrapper__2ee44 {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    width: 100% !important;
-}
-
-.activityPanel_c48ade .button__67645 {
-    margin: 4px auto !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* Share button specific centering */
-.shareButton_c48ade,
-.actionButton_c48ade {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    margin: 0 auto !important;
 }
