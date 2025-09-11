@@ -17425,19 +17425,15 @@ div[class^="textArea_"] span {
 
 /* Game activity styling */
 .gameWrapper__8c6c2 {
-    background: rgba(22, 91, 123, 0.15) !important;
+    background: transparent !important;
     border: none !important;
-    border-radius: 12px 12px 0 0 !important;
-    padding: 12px !important;
-    margin: -8px -8px 0 -8px !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
-    width: calc(100% + 16px) !important;
-    min-height: 100% !important;
-    position: relative !important;
-    z-index: 2 !important;
+    width: 100% !important;
 }
 
 .gameIcon__8c6c2 {
