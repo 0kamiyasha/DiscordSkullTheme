@@ -2,6 +2,31 @@
 @import url("https://raw.githubusercontent.com/0kamiyasha/DiscordSkullTheme/refs/heads/main/Kyanite_edit.css");
 @import url("https://raw.githubusercontent.com/0kamiyasha/DiscordSkullTheme/refs/heads/main/transparent-window.css");
 @import url("https://raw.githubusercontent.com/0kamiyasha/DiscordSkullTheme/refs/heads/main/custom-block-code.css");
+
+/* Chat box positioning fix */
+.channelBottomBarArea_f75fb0 {
+    position: relative !important;
+    bottom: 0 !important;
+    margin-bottom: 0 !important;
+    transform: none !important;
+}
+
+.channelTextArea_f75fb0 {
+    margin-bottom: 0 !important;
+    transform: none !important;
+}
+
+.form_f75fb0 {
+    margin-bottom: 0 !important;
+    transform: none !important;
+}
+
+/* Fix for the channel-textarea-inner transform issue */
+.channel-textarea-inner {
+    transform: none !important;
+    -webkit-transform: none !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
 
 /* Kyanite-specific font override */
