@@ -232,28 +232,28 @@ div[class^="textArea_"] span {
 
 /* Activity panel and voice channel integration */
 .panels_c48ade {
-    background: var(--hover-faded-color) !important;
-    border-radius: 12px 12px 0 0 !important;
-    border: 1px solid var(--main-color) !important;
-    border-bottom: none !important;
-    backdrop-filter: blur(var(--background-blur)) !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
 }
 
 .panel__5dec7.activityPanel_c48ade {
-    background: transparent !important;
-    border: none !important;
-    border-bottom: 1px solid var(--hover-color) !important;
-    border-radius: 0 !important;
+    background: var(--hover-faded-color) !important;
+    border: 1px solid var(--main-color) !important;
+    border-radius: 12px 12px 0 0 !important;
     margin: 0 !important;
     padding: 12px !important;
+    backdrop-filter: blur(var(--background-blur)) !important;
 }
 
-.wrapper_e131a9 {
-    background: transparent !important;
-    border: none !important;
+.container_e131a9 {
+    background: var(--hover-faded-color) !important;
+    border: 1px solid var(--main-color) !important;
+    border-top: none !important;
     border-radius: 0 0 12px 12px !important;
     margin: 0 !important;
     padding: 12px !important;
+    backdrop-filter: blur(var(--background-blur)) !important;
 }
 
 /* Game activity styling */
