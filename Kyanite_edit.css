@@ -4484,7 +4484,7 @@ button[aria-label="Stop Watching"]
     color: var(--hover-bright-color) !important;
 }
 .panel__5dec7 {
-    background: rgba(22, 91, 123, 0.25) !important;
+    background: rgba(22, 91, 123, 0.05) !important;
 }
 .gameWrapper__5dec7 .subtext__339d0 {
     color: var(--hover-bright-color) !important;
@@ -17371,14 +17371,14 @@ div[class^="textArea_"] span {
 }
 
 .panel__5dec7.activityPanel_c48ade {
-    background: rgba(22, 91, 123, 0.25) !important;
+    background: rgba(22, 91, 123, 0.05) !important;
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-radius: 12px 12px 0 0 !important;
     margin: 0 !important;
 }
 
 .wrapper_e131a9 {
-    background: rgba(22, 91, 123, 0.25) !important;
+    background: rgba(22, 91, 123, 0.05) !important;
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-top: none !important;
     border-radius: 0 0 12px 12px !important;
