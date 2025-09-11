@@ -17411,6 +17411,18 @@ div[class^="textArea_"] span {
     background: rgba(22, 91, 123, 0.15) !important;
 }
 
+/* Fill the entire activity panel area to prevent bleeding */
+.body__5dec7.panel__5dec7.activityPanel_c48ade,
+.panel__5dec7.activityPanel_c48ade .body__5dec7 {
+    background: rgba(22, 91, 123, 0.15) !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
 /* Game activity styling */
 .gameWrapper__8c6c2 {
     background: transparent !important;
