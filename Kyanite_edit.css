@@ -17386,23 +17386,12 @@ div[class^="textArea_"] span {
     border-top: none !important;
     border-radius: 0 0 12px 12px !important;
     margin: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 8px 12px !important;
 }
 
 .container_e131a9 {
     background: transparent !important;
     border: none !important;
     border-radius: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    text-align: center !important;
 }
 
 /* Game activity styling */
@@ -17445,11 +17434,7 @@ div[class^="textArea_"] span {
     padding: 12px 16px !important;
     min-height: 60px !important;
     display: flex !important;
-    flex-direction: column !important;
     align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    width: 100% !important;
 }
 
 /* Remove border from actions */
@@ -17459,14 +17444,10 @@ div[class^="textArea_"] span {
 
 .rtcConnectionStatus__06d62 {
     color: var(--soft-bright-color) !important;
-    text-align: center !important;
-    width: 100% !important;
 }
 
 .channel_e131a9 {
     color: var(--text-muted) !important;
-    text-align: center !important;
-    width: 100% !important;
 }
 
 /* Voice buttons integration */
@@ -17476,11 +17457,6 @@ div[class^="textArea_"] span {
     border-radius: 8px !important;
     padding: 4px !important;
     margin-top: 8px !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 8px !important;
-    width: 100% !important;
 }
 
 .button_e131a9,
