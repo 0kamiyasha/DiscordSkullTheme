@@ -108,6 +108,36 @@
 #app-mount {
     background: rgba(0, 0, 0, 0.75) !important;
 }
+
+/* Fix overlapping menus and chat width */
+#app-mount .content_f75fb0 {
+    width: auto !important;
+    max-width: none !important;
+    overflow-x: visible !important;
+}
+
+/* Ensure proper spacing for floating elements */
+.chat_f75fb0.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0 .content_f75fb0 {
+    width: calc(100% - 320px) !important; /* Adjust based on sidebar width */
+    max-width: none !important;
+    overflow-x: visible !important;
+}
+
+/* Fix menu z-index issues */
+.menu_dc1b2e,
+.contextMenu_dc1b2e {
+    z-index: 9999 !important;
+}
+
+/* Additional fixes for better menu behavior */
+.layer_cd0de5 {
+    z-index: 10000 !important;
+}
+
+.modal_d71c3c {
+    z-index: 10001 !important;
+}
+
 body,
 body::after,
 .callout-backdrop,
@@ -16869,6 +16899,253 @@ a[href="https://support.discord.com"]
 .vc-settings-card.vc-backup-restore-card.cardPrimary__73069.card__73069 strong,
 .vc-settings-card.vc-backup-restore-card.cardPrimary__73069.card__73069 span {
     color: var(--soft-bright-color) !important;
+}
+
+/* Voice call and UI fixes */
+/* Fix any potential sidebar overlap issues */
+.sidebar_c25c60 {
+    z-index: 100 !important;
+}
+
+.panels_c25c60 {
+    z-index: 101 !important;
+}
+
+/* Fix active call menu transparency and bleeding */
+.wrapper_f90abb {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    z-index: 1000 !important;
+}
+
+.container_f90abb {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
+    z-index: 1001 !important;
+}
+
+/* Fix specific voice call container classes from inspect */
+.container_e131a9 {
+    background-color: var(--hover-faded-color, rgba(7, 22, 37, 0.95)) !important;
+    border: 1px solid rgba(22, 91, 123, 0.4) !important;
+    backdrop-filter: blur(10px) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6) !important;
+    z-index: 1000 !important;
+    border-radius: 8px !important;
+}
+
+.connection_e131a9 {
+    background-color: rgba(7, 22, 37, 0.7) !important;
+    border-radius: 6px !important;
+    padding: 8px !important;
+}
+
+.voiceButtonsContainer_e131a9 {
+    background-color: rgba(7, 22, 37, 0.7) !important;
+    border-radius: 6px !important;
+    padding: 4px !important;
+}
+
+.actionButtons_e131a9 {
+    background-color: rgba(7, 22, 37, 0.7) !important;
+    border-radius: 6px !important;
+    padding: 4px !important;
+}
+
+/* Voice connection panel fixes */
+.container_c25c60 {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
+    border-top: 2px solid var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    z-index: 102 !important;
+}
+
+/* Fix message input box styling */
+.channelTextArea_c48ade {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+.textArea__74543 {
+    background-color: transparent !important;
+    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+}
+
+.placeholder__74543 {
+    color: rgba(133, 206, 255, 0.6) !important;
+}
+
+/* Fix specific message box classes from inspect */
+.form_f75fb0 {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+    margin: 0 16px 24px 16px !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.channelTextArea_f75fb0 {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 8px !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.channelBottomBarArea_f75fb0 {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.scrollableContainer__74017 {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 6px !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.themedBackground__74017 {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.inner__74017 {
+    background-color: transparent !important;
+}
+
+.textArea__74017 {
+    background-color: transparent !important;
+    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+}
+
+.slateContainer_ec4baf {
+    background-color: transparent !important;
+}
+
+.placeholder__1b31f {
+    color: rgba(133, 206, 255, 0.6) !important;
+}
+
+/* Fix message input buttons */
+.buttons__74017 {
+    background-color: transparent !important;
+}
+
+.buttonContainer__74017 {
+    background-color: transparent !important;
+}
+
+.attachButton__74017 {
+    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    background-color: transparent !important;
+}
+
+.attachButton__74017:hover {
+    background-color: var(--hover-color, rgba(22, 91, 123, 0.3)) !important;
+    border-radius: 4px !important;
+}
+
+.button__74017 {
+    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    background-color: transparent !important;
+}
+
+.button__74017:hover {
+    background-color: var(--hover-color, rgba(22, 91, 123, 0.3)) !important;
+    border-radius: 4px !important;
+}
+
+/* Fix attach button specific styling */
+.attachWrapper__0923f {
+    background-color: transparent !important;
+}
+
+.attachButton__0923f {
+    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    background-color: transparent !important;
+}
+
+.attachButton__0923f:hover {
+    background-color: var(--hover-color, rgba(22, 91, 123, 0.3)) !important;
+    border-radius: 4px !important;
+}
+
+/* Fix call controls and status */
+.rtcConnectionStatus_c25c60 {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
+    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+}
+
+/* Ensure call overlay doesn't interfere with other elements */
+.voiceCallWrapper_c25c60 {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
+    border: 1px solid var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    backdrop-filter: blur(15px) !important;
+    z-index: 999 !important;
+}
+
+/* Fix message input area background */
+.form_c48ade {
+    background-color: var(--hover-faded-color, rgba(7, 22, 37, 0.95)) !important;
+    border-radius: 8px !important;
+    margin: 0 16px 24px 16px !important;
+}
+
+/* Fix attachment and emoji button styling */
+.attachButton_c48ade {
+    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+}
+
+.attachButton_c48ade:hover {
+    background-color: var(--hover-color, rgba(22, 91, 123, 0.3)) !important;
+}
+
+/* Fix send button */
+.button_a68077 {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
+    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+}
+
+.button_a68077:hover {
+    background-color: var(--hover-bright-color, rgba(16, 165, 235, 0.8)) !important;
+}
+
+/* Additional voice call interface fixes */
+.wrapper_dc73d1 {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
+    border: 1px solid var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    backdrop-filter: blur(20px) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Fix voice panel user info */
+.voiceUser_c25c60 {
+    background-color: var(--hover-faded-color, rgba(7, 22, 37, 0.95)) !important;
+    border-radius: 4px !important;
+    margin: 2px 0 !important;
+}
+
+/* Ensure proper stacking order for all overlays */
+[class*="layerContainer"] {
+    z-index: 10000 !important;
+}
+
+[class*="callContainer"] {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
+    backdrop-filter: blur(15px) !important;
+    border: 2px solid var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    z-index: 998 !important;
+}
+
+/* Fix any remaining transparency issues */
+.theme-dark .container_c25c60 {
+    background-color: var(--main-color, rgba(22, 91, 123, 1)) !important;
 }
 
 /* Experiments control text */

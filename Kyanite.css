@@ -3,10 +3,13 @@
 @import url("https://raw.githubusercontent.com/0kamiyasha/DiscordSkullTheme/refs/heads/main/transparent-window.css");
 @import url("https://raw.githubusercontent.com/0kamiyasha/DiscordSkullTheme/refs/heads/main/custom-block-code.css");
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+
+/* Kyanite-specific font override */
 * {
-    font-family: "Space Grotesk", sans-serif; !important;
+    font-family: "Space Grotesk", sans-serif !important;
 }
-/* Adjustable main color palette and background options */
+
+/* Kyanite color palette and background options */
 :root {
     /* Kyanite accents */
     --main-color: rgba(22, 91, 123, 1) !important;
@@ -22,23 +25,8 @@
     --background-blur: 0px !important;
     --background-brightness: 75% !important;
 }
-/* Global variable */
-@supports (color: color-mix(in lch, red, blue)) and (top: var(--f)) {
-    .visual-refresh.theme-dark, .visual-refresh .theme-dark  {
-        /* Making discord mostly transparent */
-        --background-tertiary: var(--hover-faded-color);
-        --bg-overlay-floating: var(--main-color);
-        --background-base-lower: var(--hover-faded-color);
-        --background-surface-high : var(--main-color);
-        --modal-background: var(--main-color);
-        --modal-footer-background: var(--soft-bright-color);
-        --bg-base-secondary: rgba(0, 0, 0, 0);
-        --bg-surface-overlay: var(--soft-bright-color); 
-        --background-surface-highest: var(--soft-bright-color);
-        --background-surface-higher: var(--soft-bright-color);
-        --background-floating: var(--soft-bright-color);
-	}
-/* Main background */
+
+/* Kyanite background image override */
 body::after,
 .callout-backdrop,
 .user-popout::before,
@@ -49,6 +37,7 @@ body::after,
 .invite-modal .invite-splash {
     background-image: url("https://raw.githubusercontent.com/0kamiyasha/DiscordSkullTheme/refs/heads/main/neonskull.jpg") !important;
 }
+
 .message__5126c.selected__5126c .buttons__5126c,
 .mouse-mode .message__5126c:hover .buttons__5126c {
     display: initial !important;
@@ -72,41 +61,8 @@ body::after,
 div[class^="textArea_"] span {
     color: rgba(16, 165, 235, 1) !important;
 }
-/* Fix overlapping menus and chat width */
-#app-mount .content_f75fb0 {
-    width: auto !important;
-    max-width: none !important;
-    overflow-x: visible !important;
-}
 
-/* Ensure proper spacing for floating elements */
-.chat_f75fb0.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0 .content_f75fb0 {
-    width: calc(100% - 320px) !important; /* Adjust based on sidebar width */
-    max-width: none !important;
-    overflow-x: visible !important;
-}
-
-/* Fix menu z-index issues */
-.menu_dc1b2e {
-    z-index: 9999 !important;
-}
-
-.contextMenu_dc1b2e {
-    z-index: 9999 !important;
-}
-
-} /* Closing brace for @supports rule */
-
-/* Additional fixes for better menu behavior */
-.layer_cd0de5 {
-    z-index: 10000 !important;
-}
-
-.modal_d71c3c {
-    z-index: 10001 !important;
-}
-
-/* Improve text contrast and link visibility */
+/* Kyanite-specific link styling for improved visibility */
 .markup_a7e664 a {
     color: var(--soft-bright-color) !important;
     text-decoration: underline !important;
@@ -247,250 +203,4 @@ div[class^="textArea_"] span {
 .messageContent_c19a55 a:not(.mention):hover {
     color: rgba(255, 255, 255, 1) !important;
     text-decoration: underline !important;
-}
-
-/* Fix any potential sidebar overlap issues */
-.sidebar_c25c60 {
-    z-index: 100 !important;
-}
-
-.panels_c25c60 {
-    z-index: 101 !important;
-}
-
-/* Fix active call menu transparency and bleeding */
-.wrapper_f90abb {
-    background-color: var(--main-color) !important;
-    backdrop-filter: blur(10px) !important;
-    border: 1px solid var(--soft-bright-color) !important;
-    z-index: 1000 !important;
-}
-
-.container_f90abb {
-    background-color: var(--main-color) !important;
-    z-index: 1001 !important;
-}
-
-/* Fix specific voice call container classes from inspect */
-.container_e131a9 {
-    background-color: var(--hover-faded-color) !important;
-    border: 1px solid rgba(22, 91, 123, 0.4) !important;
-    backdrop-filter: blur(10px) !important;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6) !important;
-    z-index: 1000 !important;
-    border-radius: 8px !important;
-}
-
-.connection_e131a9 {
-    background-color: rgba(7, 22, 37, 0.7) !important;
-    border-radius: 6px !important;
-    padding: 8px !important;
-}
-
-.voiceButtonsContainer_e131a9 {
-    background-color: rgba(7, 22, 37, 0.7) !important;
-    border-radius: 6px !important;
-    padding: 4px !important;
-}
-
-.actionButtons_e131a9 {
-    background-color: rgba(7, 22, 37, 0.7) !important;
-    border-radius: 6px !important;
-    padding: 4px !important;
-}
-
-/* Voice connection panel fixes */
-.container_c25c60 {
-    background-color: var(--main-color) !important;
-    border-top: 2px solid var(--soft-bright-color) !important;
-    z-index: 102 !important;
-}
-
-/* Fix message input box styling */
-.channelTextArea_c48ade {
-    background-color: transparent !important;
-    border: none !important;
-    border-radius: 8px !important;
-}
-
-.textArea__74543 {
-    background-color: transparent !important;
-    color: var(--soft-bright-color) !important;
-}
-
-.placeholder__74543 {
-    color: rgba(133, 206, 255, 0.6) !important;
-}
-
-/* Fix specific message box classes from inspect */
-.form_f75fb0 {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-    border-radius: 8px !important;
-    margin: 0 16px 24px 16px !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.channelTextArea_f75fb0 {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-    border-radius: 8px !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.channelBottomBarArea_f75fb0 {
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.scrollableContainer__74017 {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border-radius: 6px !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.themedBackground__74017 {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-}
-
-.inner__74017 {
-    background-color: transparent !important;
-}
-
-.textArea__74017 {
-    background-color: transparent !important;
-    color: var(--soft-bright-color) !important;
-}
-
-.slateContainer_ec4baf {
-    background-color: transparent !important;
-}
-
-.placeholder__1b31f {
-    color: rgba(133, 206, 255, 0.6) !important;
-}
-
-/* Fix message input buttons */
-.buttons__74017 {
-    background-color: transparent !important;
-}
-
-.buttonContainer__74017 {
-    background-color: transparent !important;
-}
-
-.attachButton__74017 {
-    color: var(--soft-bright-color) !important;
-    background-color: transparent !important;
-}
-
-.attachButton__74017:hover {
-    background-color: var(--hover-color) !important;
-    border-radius: 4px !important;
-}
-
-.button__74017 {
-    color: var(--soft-bright-color) !important;
-    background-color: transparent !important;
-}
-
-.button__74017:hover {
-    background-color: var(--hover-color) !important;
-    border-radius: 4px !important;
-}
-
-/* Fix attach button specific styling */
-.attachWrapper__0923f {
-    background-color: transparent !important;
-}
-
-.attachButton__0923f {
-    color: var(--soft-bright-color) !important;
-    background-color: transparent !important;
-}
-
-.attachButton__0923f:hover {
-    background-color: var(--hover-color) !important;
-    border-radius: 4px !important;
-}
-
-/* Fix call controls and status */
-.rtcConnectionStatus_c25c60 {
-    background-color: var(--main-color) !important;
-    color: var(--soft-bright-color) !important;
-}
-
-/* Ensure call overlay doesn't interfere with other elements */
-.voiceCallWrapper_c25c60 {
-    background-color: var(--main-color) !important;
-    border: 1px solid var(--soft-bright-color) !important;
-    backdrop-filter: blur(15px) !important;
-    z-index: 999 !important;
-}
-
-/* Fix message input area background */
-.form_c48ade {
-    background-color: var(--hover-faded-color) !important;
-    border-radius: 8px !important;
-    margin: 0 16px 24px 16px !important;
-}
-
-/* Fix attachment and emoji button styling */
-.attachButton_c48ade {
-    color: var(--soft-bright-color) !important;
-}
-
-.attachButton_c48ade:hover {
-    background-color: var(--hover-color) !important;
-}
-
-/* Fix send button */
-.button_a68077 {
-    background-color: var(--main-color) !important;
-    color: var(--soft-bright-color) !important;
-}
-
-.button_a68077:hover {
-    background-color: var(--hover-bright-color) !important;
-}
-
-/* Additional voice call interface fixes */
-.wrapper_dc73d1 {
-    background-color: var(--main-color) !important;
-    border: 1px solid var(--soft-bright-color) !important;
-    backdrop-filter: blur(20px) !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) !important;
-}
-
-/* Fix voice panel user info */
-.voiceUser_c25c60 {
-    background-color: var(--hover-faded-color) !important;
-    border-radius: 4px !important;
-    margin: 2px 0 !important;
-}
-
-/* Ensure proper stacking order for all overlays */
-[class*="layerContainer"] {
-    z-index: 10000 !important;
-}
-
-[class*="callContainer"] {
-    background-color: var(--main-color) !important;
-    backdrop-filter: blur(15px) !important;
-    border: 2px solid var(--soft-bright-color) !important;
-    z-index: 998 !important;
-}
-
-/* Fix any remaining transparency issues */
-.theme-dark .container_c25c60 {
-    background-color: var(--main-color) !important;
 }

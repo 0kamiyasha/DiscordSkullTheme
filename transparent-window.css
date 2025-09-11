@@ -19,5 +19,17 @@
         /* Background color for the setting page */
         /* application and server card (in "discover" page) AND soundboard selector */
         --background-base-low: rgba(0, 0, 0, 0);
+        
+        /* Additional transparency for better theme integration */
+        --bg-overlay-floating: var(--main-color, rgba(22, 91, 123, 1));
+        --background-base-lower: var(--hover-faded-color, rgba(7, 22, 37, 0.95));
+        --background-surface-high: var(--main-color, rgba(22, 91, 123, 1));
+        --modal-background: var(--main-color, rgba(22, 91, 123, 1));
+        --modal-footer-background: var(--soft-bright-color, rgb(133, 206, 255));
+        --bg-base-secondary: rgba(0, 0, 0, 0);
+        --bg-surface-overlay: var(--soft-bright-color, rgb(133, 206, 255)); 
+        --background-surface-highest: var(--soft-bright-color, rgb(133, 206, 255));
+        --background-surface-higher: var(--soft-bright-color, rgb(133, 206, 255));
+        --background-floating: var(--soft-bright-color, rgb(133, 206, 255));
     }
 }
