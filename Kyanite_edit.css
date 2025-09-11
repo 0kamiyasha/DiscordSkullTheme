@@ -4484,7 +4484,7 @@ button[aria-label="Stop Watching"]
     color: var(--hover-bright-color) !important;
 }
 .panel__5dec7 {
-    background: rgba(22, 91, 123, 0.05) !important;
+    background: rgba(22, 91, 123, 0.15) !important;
 }
 .gameWrapper__5dec7 .subtext__339d0 {
     color: var(--hover-bright-color) !important;
@@ -17375,12 +17375,10 @@ div[class^="textArea_"] span {
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-radius: 12px 12px 0 0 !important;
     margin: 0 !important;
-    position: relative !important;
-    z-index: 1 !important;
 }
 
 .wrapper_e131a9 {
-    background: rgba(22, 91, 123, 0.05) !important;
+    background: rgba(22, 91, 123, 0.15) !important;
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-top: none !important;
     border-radius: 0 0 12px 12px !important;
@@ -17396,31 +17394,12 @@ div[class^="textArea_"] span {
 /* Ensure consistent backgrounds for all child elements */
 .panel__5dec7.activityPanel_c48ade > *,
 .wrapper_e131a9 > * {
-    background: rgba(22, 91, 123, 0.15) !important;
+    background: transparent !important;
 }
 
 .panel__5dec7.activityPanel_c48ade .content__2ee44,
 .panel__5dec7.activityPanel_c48ade .gameWrapper__2ee44 {
-    background: rgba(22, 91, 123, 0.15) !important;
-}
-
-/* Force solid background for activity panel header area */
-.panel__5dec7.activityPanel_c48ade .activityHeader-2shpl0,
-.panel__5dec7.activityPanel_c48ade .header__2ee44,
-.panel__5dec7.activityPanel_c48ade .headerText__2ee44 {
-    background: rgba(22, 91, 123, 0.15) !important;
-}
-
-/* Fill the entire activity panel area to prevent bleeding */
-.body__5dec7.panel__5dec7.activityPanel_c48ade,
-.panel__5dec7.activityPanel_c48ade .body__5dec7 {
-    background: rgba(22, 91, 123, 0.15) !important;
-    width: 100% !important;
-    height: 100% !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    border-radius: 12px 12px 0 0 !important;
+    background: transparent !important;
 }
 
 /* Game activity styling */
