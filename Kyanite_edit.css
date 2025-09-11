@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
 * {
     font-family: "Space Grotesk", sans-serif; !important;
+}
 /* Adjustable main color palette and background options */
 :root {
     /* Kyanite accents */
@@ -307,8 +308,8 @@ div[class^="textArea_"] span {
 
 /* Fix message input box styling */
 .channelTextArea_c48ade {
-    background-color: transparent !important;
-    border: none !important;
+    background-color: var(--hover-faded-color) !important;
+    border: 1px solid var(--main-color) !important;
     border-radius: 8px !important;
 }
 
@@ -323,42 +324,28 @@ div[class^="textArea_"] span {
 
 /* Fix specific message box classes from inspect */
 .form_f75fb0 {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: var(--hover-faded-color) !important;
     border-radius: 8px !important;
     margin: 0 16px 24px 16px !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+    border: 1px solid rgba(22, 91, 123, 0.3) !important;
 }
 
 .channelTextArea_f75fb0 {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: var(--hover-faded-color) !important;
     border-radius: 8px !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
 }
 
 .channelBottomBarArea_f75fb0 {
     background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
 }
 
 .scrollableContainer__74017 {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(7, 22, 37, 0.6) !important;
     border-radius: 6px !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
 }
 
 .themedBackground__74017 {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    border: none !important;
-    box-shadow: none !important;
-    outline: none !important;
+    background-color: rgba(7, 22, 37, 0.6) !important;
 }
 
 .inner__74017 {
