@@ -229,3 +229,93 @@ div[class^="textArea_"] span {
     color: rgba(255, 255, 255, 1) !important;
     text-decoration: underline !important;
 }
+
+/* Activity panel and voice channel integration */
+.panels_c48ade {
+    background: var(--hover-faded-color) !important;
+    border-radius: 12px 12px 0 0 !important;
+    border: 1px solid var(--main-color) !important;
+    border-bottom: none !important;
+    backdrop-filter: blur(var(--background-blur)) !important;
+}
+
+.panel__5dec7.activityPanel_c48ade {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid var(--hover-color) !important;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 12px !important;
+}
+
+.wrapper_e131a9 {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 0 12px 12px !important;
+    margin: 0 !important;
+    padding: 12px !important;
+}
+
+/* Game activity styling */
+.gameWrapper__8c6c2 {
+    background: var(--hover-faint-color) !important;
+    border: 1px solid var(--hover-color) !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
+}
+
+.gameIcon__8c6c2 {
+    border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(22, 91, 123, 0.3) !important;
+}
+
+.gameName__8c6c2 {
+    color: var(--soft-bright-color) !important;
+    font-weight: 600 !important;
+}
+
+.textContent__2ee44 {
+    color: var(--text-muted) !important;
+    opacity: 0.8 !important;
+}
+
+/* Voice connection status integration */
+.connection_e131a9 {
+    background: var(--hover-faint-color) !important;
+    border: 1px solid var(--hover-color) !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
+}
+
+.rtcConnectionStatus__06d62 {
+    color: var(--soft-bright-color) !important;
+}
+
+.channel_e131a9 {
+    color: var(--text-muted) !important;
+}
+
+/* Voice buttons integration */
+.actionButtons_e131a9,
+.voiceButtonsContainer_e131a9 {
+    background: var(--hover-faint-color) !important;
+    border-radius: 8px !important;
+    padding: 4px !important;
+    margin-top: 8px !important;
+}
+
+.button_e131a9,
+.panelButtonContainer__4cd01 .button__67645 {
+    background: var(--hover-color) !important;
+    border: 1px solid var(--main-color) !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease !important;
+}
+
+.button_e131a9:hover,
+.panelButtonContainer__4cd01 .button__67645:hover {
+    background: var(--hover-dark-color) !important;
+    border-color: var(--soft-bright-color) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(22, 91, 123, 0.4) !important;
+}
