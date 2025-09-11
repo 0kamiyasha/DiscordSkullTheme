@@ -4475,6 +4475,7 @@ button[aria-label="Stop Watching"]
     border-bottom: none !important;
     padding-bottom: 0px !important;
     margin-bottom: -6px !important;
+    background: rgba(22, 91, 123, 0.25) !important;
 }
 .defaultColor_e9e35f,
 .defaultColor__4bd52,
@@ -4483,7 +4484,7 @@ button[aria-label="Stop Watching"]
     color: var(--hover-bright-color) !important;
 }
 .panel__5dec7 {
-    background: transparent !important;
+    background: rgba(22, 91, 123, 0.25) !important;
 }
 .gameWrapper__5dec7 .subtext__339d0 {
     color: var(--hover-bright-color) !important;
