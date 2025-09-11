@@ -17371,10 +17371,12 @@ div[class^="textArea_"] span {
 }
 
 .panel__5dec7.activityPanel_c48ade {
-    background: rgba(22, 91, 123, 0.05) !important;
+    background: rgba(22, 91, 123, 0.15) !important;
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-radius: 12px 12px 0 0 !important;
     margin: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 .wrapper_e131a9 {
@@ -17394,12 +17396,19 @@ div[class^="textArea_"] span {
 /* Ensure consistent backgrounds for all child elements */
 .panel__5dec7.activityPanel_c48ade > *,
 .wrapper_e131a9 > * {
-    background: transparent !important;
+    background: rgba(22, 91, 123, 0.15) !important;
 }
 
 .panel__5dec7.activityPanel_c48ade .content__2ee44,
 .panel__5dec7.activityPanel_c48ade .gameWrapper__2ee44 {
-    background: transparent !important;
+    background: rgba(22, 91, 123, 0.15) !important;
+}
+
+/* Force solid background for activity panel header area */
+.panel__5dec7.activityPanel_c48ade .activityHeader-2shpl0,
+.panel__5dec7.activityPanel_c48ade .header__2ee44,
+.panel__5dec7.activityPanel_c48ade .headerText__2ee44 {
+    background: rgba(22, 91, 123, 0.15) !important;
 }
 
 /* Game activity styling */
