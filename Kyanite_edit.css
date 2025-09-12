@@ -17587,3 +17587,8 @@ div[class^="textArea_"] span {
     background: rgba(22, 91, 123, 0.15) !important;
     box-sizing: border-box !important;
 }
+
+/* Shift avatar wrapper to the left and up */
+.wrapper__44b0c.avatar__37e49 {
+    transform: translateX(-8px) translateY(-5px) !important;
+}
