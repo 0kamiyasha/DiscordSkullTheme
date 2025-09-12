@@ -17383,6 +17383,8 @@ div[class^="textArea_"] span {
     border-top: none !important;
     border-radius: 0 0 12px 12px !important;
     margin: 0 !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
 }
 
 .container_e131a9 {
