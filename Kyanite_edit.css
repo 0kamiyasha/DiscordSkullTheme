@@ -4443,19 +4443,6 @@ button[aria-label="Stop Watching"]
     border-bottom-left-radius: 8px !important;
 }
 
-/* Specific user panel adjustments */
-.panelTitleContainer__37e49 {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    height: 100% !important;
-    margin-right: -25px !important;
-}
-
-.text-xs\/medium_cf4812.subtext__339d0 {
-    margin-left: 8px !important;
-}
-
 /* Activity status panel */
 .icon_a629d4 {
     background-color: var(--hover-dark-color) !important;
@@ -17383,11 +17370,59 @@ div[class^="textArea_"] span {
     margin: 0 0px !important;
 }
 
+/* Move panel button container to the right */
+.panelButtonContainer__4cd01 {
+    margin: 0 !important;
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transform: translateX(0px) !important;
+}
+
+/* Move RTC connection status 2px to the right */
+.rtcConnectionStatusConnected__06d62.rtcConnectionStatusLabel__06d62.hoverableStatus_cdcd10.hoverRoll__0263c {
+    transform: translateX(10px) !important;
+}
+
+/* Remove border from activity panel button */
+.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Additional targeting for the button */
+.panelButtonContainer__4cd01 .button__67645 {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Match Spotify player styling to other panels */
+#vc-spotify-player {
+    background: transparent !important;
+    border: 1px solid rgba(22, 91, 123, 0.3) !important;
+    border-radius: 12px !important;
+    margin: 0 7px !important;
+    padding: 0px !important;
+    box-sizing: border-box !important;
+    width: calc(100% - 15px) !important;
+    max-width: calc(100% - 15px) !important;
+}
+
 .panel__5dec7.activityPanel_c48ade {
     background: transparent !important;
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-radius: 12px !important;
-    margin: 0 8px !important;
+    margin: 0 10px !important;
     padding: 0px !important;
     box-sizing: border-box !important;
     width: calc(100% - 15px) !important;
@@ -17415,55 +17450,6 @@ div[class^="textArea_"] span {
 .panel__5dec7.activityPanel_c48ade > *,
 .wrapper_e131a9 > * {
     background: transparent !important;
-}
-
-.panel__5dec7.activityPanel_c48ade .content__2ee44,
-.panel__5dec7.activityPanel_c48ade .gameWrapper__2ee44 {
-    background: rgba(22, 91, 123, 0.15) !important;
-    border: 1px solid rgba(22, 91, 123, 0.3) !important;
-    border-radius: 8px !important;
-    padding: 6px !important;
-}
-
-/* Game activity styling - comprehensive class coverage for centering */
-[class*="gameWrapper"],
-.gameWrapper__8c6c2,
-.gameWrapper__5dec7,
-.gameWrapper__2ee44 {
-    background: transparent !important;
-    border: none !important;
-    border-radius: 8px !important;
-    padding: 4px 8px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    width: 100% !important;
-}
-
-/* Game content container - ensure everything inside is centered */
-[class*="gameWrapper"] > *,
-.gameWrapper__8c6c2 > *,
-.gameWrapper__5dec7 > *,
-.gameWrapper__2ee44 > * {
-    text-align: center !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-}
-
-/* Activity panel content centering */
-.panel__5dec7.activityPanel_c48ade .content__2ee44,
-.panel__5dec7.activityPanel_c48ade [class*="content"] {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    width: 100% !important;
 }
 
 [class*="gameIcon"],
@@ -17534,23 +17520,6 @@ div[class^="textArea_"] span {
     display: block !important;
 }
 
-/* Center activity container and all its children */
-[class*="activity"]:not([class*="activityIcon"]):not([class*="activityText"]) {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    width: 100% !important;
-}
-
-/* Ensure activity items are centered within their containers */
-[class*="activity"] > * {
-    text-align: center !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
 /* Voice connection status integration */
 .connection_e131a9 {
     background: transparent !important;
@@ -17558,13 +17527,12 @@ div[class^="textArea_"] span {
     border-radius: 8px !important;
     padding: 4px 8px !important;
     min-height: 40px !important;
-    display: flex !important;
-    align-items: center !important;
 }
 
 /* Remove border from actions */
 .actions__4cd01 {
     border: none !important;
+    margin: 0 !important;
 }
 
 .rtcConnectionStatus__06d62 {
@@ -17598,4 +17566,24 @@ div[class^="textArea_"] span {
     border-color: var(--soft-bright-color) !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 12px rgba(22, 91, 123, 0.4) !important;
+}
+
+/* Remove margins from specific activity panel elements */
+.gameWrapper__8c6c2 {
+    margin: 0 !important;
+}
+
+.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 {
+    margin: 0 !important;
+}
+
+/* User panel container styling for both normal and RTC states */
+.container__37e49,
+.container__37e49.containerRtcOpened__37e49 {
+    width: calc(100% - 16px) !important;
+    border: 1px solid rgba(22, 91, 123, 0.3) !important;
+    border-radius: 12px !important;
+    margin: 8px !important;
+    background: rgba(22, 91, 123, 0.15) !important;
+    box-sizing: border-box !important;
 }
