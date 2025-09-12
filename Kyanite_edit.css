@@ -2152,6 +2152,22 @@ pre:hover .copybutton {
     border-radius: 4px !important;
     padding: 8px !important;
 }
+
+/* Override aggressive transparency from other themes for forums */
+[class*="container"][class*="f369db"],
+[class*="mainCard"][class*="f369db"],
+.container_f369db.container_f369db,
+.mainCard_f369db.mainCard_f369db {
+    background-color: var(--hover-color) !important;
+    background: var(--hover-color) !important;
+}
+
+/* Force forum list background visibility */
+.scroller_b5e82b[role="main"],
+.content_b5e82b .scroller_b5e82b {
+    background-color: var(--hover-faint-color) !important;
+    background: var(--hover-faint-color) !important;
+}
 .container_f369db.outOfDate-cxmqSe .colorStandard-21JIj7 {
     color: var(--soft-bright-color) !important;
 }
