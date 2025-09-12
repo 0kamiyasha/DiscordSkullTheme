@@ -4443,6 +4443,19 @@ button[aria-label="Stop Watching"]
     border-bottom-left-radius: 8px !important;
 }
 
+/* Specific user panel adjustments */
+.panelTitleContainer__37e49 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    margin-right: -25px !important;
+}
+
+.text-xs\/medium_cf4812.subtext__339d0 {
+    margin-left: 8px !important;
+}
+
 /* Activity status panel */
 .icon_a629d4 {
     background-color: var(--hover-dark-color) !important;
@@ -17369,17 +17382,19 @@ div[class^="textArea_"] span {
 }
 
 .panel__5dec7.activityPanel_c48ade {
-    background: rgba(22, 91, 123, 0.15) !important;
+    background: transparent !important;
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
-    border-radius: 12px 12px 0 0 !important;
-    margin: 0 !important;
-    padding: 8px !important;
+    border-radius: 12px !important;
+    margin: 0 8px !important;
+    padding: 0px !important;
     box-sizing: border-box !important;
+    width: calc(100% - 15px) !important;
+    max-width: calc(100% - 15px) !important;
 }
 
 .wrapper_e131a9 {
-    background: rgba(22, 91, 123, 0.15) !important;
-    border: 1px solid rgba(22, 91, 123, 0.3) !important;
+    background: transparent !important;
+    border: none !important;
     border-top: none !important;
     border-radius: 0 0 12px 12px !important;
     margin: 0 !important;
@@ -17388,10 +17403,11 @@ div[class^="textArea_"] span {
 }
 
 .container_e131a9 {
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0 !important;
+    background: rgba(22, 91, 123, 0.15) !important;
+    border: 1px solid rgba(22, 91, 123, 0.3) !important;
+    border-radius: 12px !important;
 }
+
 
 /* Ensure consistent backgrounds for all child elements */
 .panel__5dec7.activityPanel_c48ade > *,
@@ -17401,39 +17417,136 @@ div[class^="textArea_"] span {
 
 .panel__5dec7.activityPanel_c48ade .content__2ee44,
 .panel__5dec7.activityPanel_c48ade .gameWrapper__2ee44 {
-    background: transparent !important;
+    background: rgba(22, 91, 123, 0.15) !important;
+    border: 1px solid rgba(22, 91, 123, 0.3) !important;
+    border-radius: 8px !important;
+    padding: 6px !important;
 }
 
-/* Game activity styling */
-.gameWrapper__8c6c2 {
+/* Game activity styling - comprehensive class coverage for centering */
+[class*="gameWrapper"],
+.gameWrapper__8c6c2,
+.gameWrapper__5dec7,
+.gameWrapper__2ee44 {
     background: transparent !important;
     border: none !important;
     border-radius: 8px !important;
-    padding: 8px !important;
+    padding: 4px 8px !important;
     display: flex !important;
+    flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
     width: 100% !important;
 }
 
+/* Game content container - ensure everything inside is centered */
+[class*="gameWrapper"] > *,
+.gameWrapper__8c6c2 > *,
+.gameWrapper__5dec7 > *,
+.gameWrapper__2ee44 > * {
+    text-align: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+/* Activity panel content centering */
+.panel__5dec7.activityPanel_c48ade .content__2ee44,
+.panel__5dec7.activityPanel_c48ade [class*="content"] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+[class*="gameIcon"],
 .gameIcon__8c6c2 {
     border-radius: 6px !important;
     box-shadow: 0 2px 8px rgba(22, 91, 123, 0.3) !important;
-    margin-right: 8px !important;
+    margin: 0 auto 4px auto !important;
+    display: block !important;
 }
 
+/* Remove background and border from all gameIconWrapper variants */
+[class*="gameIconWrapper"],
+.gameIconWrapper__8c6c2 {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+[class*="gameName"],
 .gameName__8c6c2 {
     color: var(--soft-bright-color) !important;
     font-weight: 600 !important;
     text-align: center !important;
-    flex: 1 !important;
+    width: 100% !important;
+    margin: 0 auto !important;
 }
 
 .textContent__2ee44 {
     color: var(--text-muted) !important;
     opacity: 0.8 !important;
     text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Universal activity panel centering - covers all possible activity content */
+.panel__5dec7.activityPanel_c48ade,
+[class*="activityPanel"] {
+    text-align: center !important;
+}
+
+.panel__5dec7.activityPanel_c48ade *,
+[class*="activityPanel"] * {
+    text-align: center !important;
+}
+
+/* Additional centering for activity text content */
+[class*="activityText"],
+[class*="playingText"],
+[class*="activity"] [class*="text"],
+[class*="activity"] [class*="name"],
+[class*="activity"] [class*="status"] {
+    text-align: center !important;
+    width: 100% !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+/* Target specific activity components that might be left-aligned */
+[class*="activity"] img,
+[class*="activity"] svg,
+[class*="gameIcon"],
+[class*="activityIcon"] {
+    margin: 0 auto !important;
+    display: block !important;
+}
+
+/* Center activity container and all its children */
+[class*="activity"]:not([class*="activityIcon"]):not([class*="activityText"]) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+/* Ensure activity items are centered within their containers */
+[class*="activity"] > * {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 /* Voice connection status integration */
