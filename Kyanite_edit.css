@@ -4487,6 +4487,10 @@ button[aria-label="Stop Watching"]
 /* Voice status panel */
 .container_e131a9 {
     border-bottom: none !important;
+    padding-bottom: 8px !important;
+    margin-bottom: -6px !important;
+    background: rgba(22, 91, 123, 0.15) !important;
+    overflow: hidden !important;
 }
 .ping_c0cb95 {
     color: var(--hover-color) !important;
