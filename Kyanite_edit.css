@@ -2135,7 +2135,22 @@ pre:hover .copybutton {
 
 /* Forum channels / Post channels */
 .container_f369db {
-    background-color: transparent !important;
+    background-color: var(--hover-faint-color) !important;
+}
+
+/* Additional forum readability improvements */
+.forumContainer__9a6c4,
+.forumList__9a6c4,
+.channelList__75906[data-list-id*="forum"] {
+    background-color: var(--hover-faint-color) !important;
+}
+
+/* Forum post content area */
+.content_f369db,
+.header_f369db {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
 }
 .container_f369db.outOfDate-cxmqSe .colorStandard-21JIj7 {
     color: var(--soft-bright-color) !important;
