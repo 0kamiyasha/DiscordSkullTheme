@@ -1,24 +1,14 @@
 :root {
     /* Kyanite accents */
-    /* --main-color: rgba(22, 91, 123, 1) !important; */
-    /* --dark-bg: rgba(7, 22, 37, 0.95) !important; */
-    /* --soft-bright-color: rgb(133, 206, 255) !important; */
-    /* --hover-color: rgba(22, 91, 123, 0.3) !important; */
-    /* --hover-faded-color: rgba(22, 91, 123, 0.2) !important; */
-    /* --hover-faint-color: rgba(22, 91, 123, 0.1) !important; */
-    /* --hover-dark-color: rgba(22, 91, 123, 0.8) !important; */
-    /* --hover-bright-color: rgba(16, 165, 235, 0.8) !important; */
-
-    /* Magenta accents */
-    --main-color: rgb(115, 22, 123) !important;
-    --dark-bg: rgba(37, 7, 37, 0.95) !important;
-    --soft-bright-color: rgba(255, 133, 255, 1) !important;
-    --hover-color: rgba(123, 22, 123, 0.3) !important;
-    --hover-faded-color: rgba(123, 22, 123, 0.2) !important;
-    --hover-faint-color: rgba(123, 22, 123, 0.1) !important;
-    --hover-dark-color: rgba(123, 22, 123, 0.8) !important;
-    --hover-bright-color: rgba(253, 97, 227, 0.8) !important;
-
+     --main-color: rgba(22, 91, 123, 1) !important; 
+    --dark-bg: rgba(7, 22, 37, 0.95) !important; 
+     --soft-bright-color: rgb(133, 206, 255) !important; 
+     --hover-color: rgba(22, 91, 123, 0.3) !important; 
+     --hover-faded-color: rgba(22, 91, 123, 0.2) !important; 
+     --hover-faint-color: rgba(22, 91, 123, 0.1) !important; 
+     --hover-dark-color: rgba(22, 91, 123, 0.8) !important; 
+     --hover-bright-color: rgba(16, 165, 235, 0.8) !important;
+     
     /* State colors */
     --green-bright-color: rgb(143, 255, 133) !important;
     --green-dark-color: rgba(34, 123, 22) !important;
@@ -4467,15 +4457,19 @@ button[aria-label="Stop Watching"]
 }
 .activityPanel_c48ade .button__67645 {
     color: var(--hover-bright-color) !important;
+    margin: 4px !important;
+    position: relative !important;
+    z-index: 1 !important;
 }
 .activityPanel_c48ade .button__67645:hover {
     color: var(--soft-bright-color) !important;
 }
 .activityPanel_c48ade {
     border-bottom: none !important;
-    padding-bottom: 0px !important;
+    padding-bottom: 8px !important;
     margin-bottom: -6px !important;
-    background: rgba(22, 91, 123, 0.25) !important;
+    background: rgba(22, 91, 123, 0.15) !important;
+    overflow: hidden !important;
 }
 .defaultColor_e9e35f,
 .defaultColor__4bd52,
@@ -5427,10 +5421,12 @@ img:not(.emote):not(.emoji)::after {
 .wrapper__4e6ce,
 .stickerCategoryShopWrapper-3EnJdQ,
 #emoji-picker-tab-panel .header_c0e32c {
-    background-color: var(--dark-bg) !important;
+    background-color: rgba(22, 91, 123, 0.15) !important;
+    border: 1px solid rgba(22, 91, 123, 0.3) !important;
 }
 .contentWrapper__08434 {
-    border: 1px solid var(--hover-color) !important;
+    background-color: rgba(22, 91, 123, 0.15) !important;
+    border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-radius: 8px !important;
     box-shadow: none !important;
 }
@@ -17172,9 +17168,11 @@ a[href="https://support.discord.com"]
     color: var(--soft-bright-color) !important;
 }
 #vc-spotify-player {
-    background-color: var(--dark-bg) !important;
-    border: none !important;
-    border-radius: 10px !important;
+    background-color: rgba(22, 91, 123, 0.15) !important;
+    border: 1px solid rgba(22, 91, 123, 0.3) !important;
+    border-radius: 12px !important;
+    margin: 0 !important;
+    padding: 8px !important;
 }
 .vc-spotify-button:hover {
     background-color: var(--hover-color) !important;
@@ -17375,6 +17373,8 @@ div[class^="textArea_"] span {
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-radius: 12px 12px 0 0 !important;
     margin: 0 !important;
+    padding: 8px !important;
+    box-sizing: border-box !important;
 }
 
 .wrapper_e131a9 {
