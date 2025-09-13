@@ -1,3 +1,92 @@
+/* Force green usernames in pinned messages popout */
+.messagesPopoutWrap__45690 .username_c19a55,
+.messagesPopoutWrap__45690 span.username_c19a55,
+.messagesPopoutWrap__45690 .username_c19a55[style],
+.messagesPopoutWrap__45690 span.username_c19a55[style],
+.messagesPopoutWrap__45690 .username_c19a55[role],
+.messagesPopoutWrap__45690 span.username_c19a55[role],
+.messagesPopoutWrap__45690 [class*="username"][class*="c19a55"],
+.messagesPopoutWrap__45690 [data-text] span.username_c19a55,
+.messagesPopoutWrap__45690 span[role="button"].username_c19a55,
+.messagesPopoutWrap__45690 span.username_c19a55:not([style*="rgb(133, 255, 150)"]) {
+    color: rgb(133, 255, 150) !important;
+    font-weight: 600 !important;
+}
+/* Fix blue usernames in pinned messages */
+.message__04d9f .username_c19a55,
+.message__04d9f span.username_c19a55 {
+    color: rgb(133, 255, 150) !important;
+    font-weight: 600 !important;
+}
+
+/* Force pinned message usernames to green, even with inline style or role */
+.message__04d9f .username_c19a55[style],
+.message__04d9f span.username_c19a55[style],
+.message__04d9f .username_c19a55[role],
+.message__04d9f span.username_c19a55[role],
+.message__04d9f [class*="username"][class*="c19a55"],
+.message__04d9f [data-text] span.username_c19a55,
+.message__04d9f span[role="button"].username_c19a55,
+.message__04d9f span.username_c19a55:not([style*="rgb(133, 255, 150)"]) {
+    color: rgb(133, 255, 150) !important;
+    font-weight: 600 !important;
+}
+/* Extra specificity for detected link preview in chat input */
+div[class^="textArea_"] .fakeLink_ada32f,
+.textArea__74543 .fakeLink_ada32f {
+    color: #2196f3 !important;
+    text-decoration: underline !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+}
+/* Force detected link preview in chat input (Discord: .fakeLink_ada32f) */
+.fakeLink_ada32f {
+    color: #4fc3f7 !important;
+    text-decoration: underline !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+}
+/* Force detected link preview in message input to blue/underline (Discord preview) */
+div[class^="textArea_"] span[style*="underline"][style*="color"],
+div[class^="textArea_"] span[style*="underline"][style*="rgb(0, 176, 244)"],
+div[class^="textArea_"] span[style*="underline"][style*="#00b0f4"],
+div[class^="textArea_"] span[style*="underline"][data-link],
+div[class^="textArea_"] span[style*="underline"][data-preview],
+div[class^="textArea_"] span[style*="underline"][class*="link"],
+.textArea__74543 span[style*="underline"][style*="color"],
+.textArea__74543 span[style*="underline"][style*="rgb(0, 176, 244)"],
+.textArea__74543 span[style*="underline"][style*="#00b0f4"],
+.textArea__74543 span[style*="underline"][data-link],
+.textArea__74543 span[style*="underline"][data-preview],
+.textArea__74543 span[style*="underline"][class*="link"] {
+    color: #4fc3f7 !important;
+    text-decoration: underline !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* Detected link preview in message input (Discord uses span[data-link] or similar for preview) */
+div[class^="textArea_"] span[style*="text-decoration: underline"],
+div[class^="textArea_"] span[style*="color: rgb(0, 176, 244)"],
+div[class^="textArea_"] span[style*="color: #00b0f4"],
+div[class^="textArea_"] span[data-link],
+div[class^="textArea_"] span[data-preview],
+div[class^="textArea_"] span[class*="link"],
+.textArea__74543 span[style*="text-decoration: underline"],
+.textArea__74543 span[style*="color: rgb(0, 176, 244)"],
+.textArea__74543 span[style*="color: #00b0f4"],
+.textArea__74543 span[data-link],
+.textArea__74543 span[data-preview],
+.textArea__74543 span[class*="link"] {
+    color: #4fc3f7 !important;
+    text-decoration: underline !important;
+    font-weight: 500;
+    cursor: pointer;
+}
+.textArea__74543 a, div[class^="textArea_"] a {
+    color: #baffd0 !important;
+    text-decoration: underline !important;
+    font-weight: 600;
+}
 :root {
     /* Dark Forest accents */
      --main-color: rgba(34, 89, 45, 1) !important; 
@@ -17012,13 +17101,15 @@ a[href="https://support.discord.com"]
     border-radius: 8px !important;
 }
 
+
 .textArea__74543 {
     background-color: transparent !important;
-    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    color: var(--text-brand, var(--main-color, rgb(133, 255, 150))) !important;
 }
 
+
 .placeholder__74543 {
-    color: rgba(133, 206, 255, 0.6) !important;
+    color: rgba(133, 255, 150, 0.6) !important;
 }
 
 /* Fix specific message box classes from inspect */
@@ -17068,11 +17159,12 @@ a[href="https://support.discord.com"]
 
 .textArea__74017 {
     background-color: transparent !important;
-    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    color: var(--text-brand, var(--main-color, rgb(133, 255, 150))) !important;
 }
 
 .slateContainer_ec4baf {
     background-color: transparent !important;
+    color: var(--text-brand, var(--main-color, rgb(133, 255, 150))) !important;
 }
 
 .placeholder__1b31f {
@@ -17088,8 +17180,9 @@ a[href="https://support.discord.com"]
     background-color: transparent !important;
 }
 
+
 .attachButton__74017 {
-    color: var(--soft-bright-color, rgb(133, 206, 255)) !important;
+    color: var(--soft-bright-color, rgb(133, 255, 150)) !important;
     background-color: transparent !important;
 }
 
@@ -17257,7 +17350,7 @@ body::after,
 
 .textArea__74543 span, 
 div[class^="textArea_"] span {
-    color: rgba(16, 165, 235, 1) !important;
+    color: var(--text-brand, var(--main-color, rgb(133, 255, 150))) !important;
 }
 
 /* Kyanite-specific link styling for improved visibility */
