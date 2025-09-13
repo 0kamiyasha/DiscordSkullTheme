@@ -1,3 +1,14 @@
+/* Shift gameWrapper right by 5px */
+.gameWrapper__8c6c2 {
+    position: relative;
+    left: 5px;
+}
+
+/* Shift panelButtonContainer left by 5px */
+.panelButtonContainer__4cd01 {
+    position: relative;
+    left: -7px;
+}
 :root {
     /* Kyanite accents */
      --main-color: rgba(22, 91, 123, 1) !important; 
@@ -4470,7 +4481,7 @@ button[aria-label="Stop Watching"]
 }
 .activityPanel_c48ade .button__67645 {
     color: var(--hover-bright-color) !important;
-    margin: 4px !important;
+    margin: 3px !important;
     position: relative !important;
     z-index: 1 !important;
 }
@@ -4479,8 +4490,8 @@ button[aria-label="Stop Watching"]
 }
 .activityPanel_c48ade {
     border-bottom: none !important;
-    padding-bottom: 8px !important;
-    margin-bottom: -6px !important;
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
     background: rgba(22, 91, 123, 0.15) !important;
     overflow: hidden !important;
 }
@@ -17436,10 +17447,10 @@ div[class^="textArea_"] span {
     background: transparent !important;
     border: 1px solid rgba(22, 91, 123, 0.3) !important;
     border-radius: 12px !important;
-    margin: 0 10px !important;
+    margin: 0 8px !important;
     padding: 0px !important;
     box-sizing: border-box !important;
-    width: calc(100% - 15px) !important;
+    width: calc(100% - 16px) !important;
     max-width: calc(100% - 15px) !important;
 }
 
@@ -17545,6 +17556,7 @@ div[class^="textArea_"] span {
 
 /* Remove border from actions */
 .actions__4cd01 {
+    background: transparent !important;
     border: none !important;
     margin: 0 !important;
 }
@@ -17568,9 +17580,8 @@ div[class^="textArea_"] span {
 
 .button_e131a9,
 .panelButtonContainer__4cd01 .button__67645 {
-    background: var(--hover-color) !important;
-    border: 1px solid var(--main-color) !important;
-    border-radius: 6px !important;
+    background: transparent !important;
+    border: none !important;
     transition: all 0.2s ease !important;
 }
 
@@ -17580,15 +17591,6 @@ div[class^="textArea_"] span {
     border-color: var(--soft-bright-color) !important;
     transform: translateY(-1px) !important;
     box-shadow: 0 4px 12px rgba(22, 91, 123, 0.4) !important;
-}
-
-/* Remove margins from specific activity panel elements */
-.gameWrapper__8c6c2 {
-    margin: 0 !important;
-}
-
-.button__67645.enabled__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 {
-    margin: 0 !important;
 }
 
 /* User panel container styling for both normal and RTC states */
