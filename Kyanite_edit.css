@@ -146,7 +146,6 @@ body::after,
 .content_f75fb0,
 .container_c48ade,
 .chat_f75fb0,
-.chatContent_f75fb0,
 .container__9293f.themed__9293f,
 .sidebar_c48ade,
 .container__2637a,
@@ -2198,6 +2197,20 @@ pre:hover .copybutton {
 }
 .channelTextAreaInner-1durB7.scrollableContainer__74017.webkit__8d35a {
     padding: 5px 0px 0px 10px !important;
+}
+
+/* Fix chat content readability in forum views */
+.chatContent_f75fb0 {
+    background-color: transparent !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+.chatTarget__01ae2 {
+    background-color: transparent !important;
+    border-radius: 8px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
 }
 .placeholder__443e5.textAreaForPostCreation__74017 {
     color: var(--hover-bright-color) !important;
@@ -16976,7 +16989,7 @@ a[href="https://support.discord.com"]
 .form_f75fb0 {
     background-color: rgba(0, 0, 0, 0.1) !important;
     border-radius: 8px !important;
-    margin: 0 16px 24px 16px !important;
+    margin: 0px !important;
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
@@ -17014,6 +17027,7 @@ a[href="https://support.discord.com"]
 
 .inner__74017 {
     background-color: transparent !important;
+    margin-top: 8px !important;
 }
 
 .textArea__74017 {
