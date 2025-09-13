@@ -1,3 +1,35 @@
+/* Force DM message text color */
+.markup__75297 span,
+.messageContent_c19a55 span,
+div[id*="message-content"] span,
+div[class*="markup"] span,
+div[class*="messageContent"] span,
+span:not([class*="username"]) {
+    color: #4CAF50 !important;
+    text-shadow: none !important;
+    animation: forceColor 0.1s forwards !important;
+}
+
+@keyframes forceColor {
+    0%, 100% { color: #4CAF50 !important; }
+}
+
+/* Force color on all text nodes */
+* {
+    color: #4CAF50 !important;
+}
+
+/* Then override specific elements that shouldn't be green */
+.winButton_c38106,
+.closeButton_c38106,
+button,
+input,
+textarea,
+[role="button"]:not(.username_c19a55),
+.toolbar__9293f *:not(.username_c19a55):not(.markup__75297):not(.messageContent_c19a55) {
+    color: inherit !important;
+}
+
 /* Force green usernames in pinned messages popout */
 .messagesPopoutWrap__45690 .username_c19a55,
 .messagesPopoutWrap__45690 span.username_c19a55,
@@ -9,13 +41,13 @@
 .messagesPopoutWrap__45690 [data-text] span.username_c19a55,
 .messagesPopoutWrap__45690 span[role="button"].username_c19a55,
 .messagesPopoutWrap__45690 span.username_c19a55:not([style*="rgb(133, 255, 150)"]) {
-    color: rgb(133, 255, 150) !important;
+    color: #4CAF50 !important;
     font-weight: 600 !important;
 }
 /* Fix blue usernames in pinned messages */
 .message__04d9f .username_c19a55,
 .message__04d9f span.username_c19a55 {
-    color: rgb(133, 255, 150) !important;
+    color: #4CAF50 !important;
     font-weight: 600 !important;
 }
 
@@ -28,7 +60,7 @@
 .message__04d9f [data-text] span.username_c19a55,
 .message__04d9f span[role="button"].username_c19a55,
 .message__04d9f span.username_c19a55:not([style*="rgb(133, 255, 150)"]) {
-    color: rgb(133, 255, 150) !important;
+    color: #4CAF50 !important;
     font-weight: 600 !important;
 }
 /* Extra specificity for detected link preview in chat input */
@@ -83,36 +115,36 @@ div[class^="textArea_"] span[class*="link"],
     cursor: pointer;
 }
 .textArea__74543 a, div[class^="textArea_"] a {
-    color: #baffd0 !important;
+    color: #4CAF50 !important;
     text-decoration: underline !important;
     font-weight: 600;
 }
 :root {
     /* Dark Forest accents */
-     --main-color: rgba(34, 89, 45, 1) !important; 
-    --dark-bg: rgba(12, 25, 15, 0.95) !important; 
-     --soft-bright-color: rgb(133, 255, 150) !important; 
-     --hover-color: rgba(34, 89, 45, 0.3) !important; 
-     --hover-faded-color: rgba(34, 89, 45, 0.2) !important; 
-     --hover-faint-color: rgba(34, 89, 45, 0.1) !important; 
-     --hover-dark-color: rgba(34, 89, 45, 0.8) !important; 
-     --hover-bright-color: rgba(50, 180, 70, 0.8) !important;
-     
+    --main-color: rgba(34, 89, 45, 1) !important;
+    --dark-bg: rgba(12, 25, 15, 0.95) !important;
+    --soft-bright-color: #4CAF50 !important;
+    --hover-color: rgba(34, 89, 45, 0.3) !important;
+    --hover-faded-color: rgba(34, 89, 45, 0.2) !important;
+    --hover-faint-color: rgba(34, 89, 45, 0.1) !important;
+    --hover-dark-color: rgba(34, 89, 45, 0.8) !important;
+    --hover-bright-color: #4CAF50 !important;
+
     /* Discord CSS Variable Overrides for Text Colors */
-    --text-brand: rgb(133, 255, 150) !important;
-    --text-normal: rgb(160, 220, 170) !important;
-    --text-muted: rgb(120, 180, 130) !important;
-    --interactive-normal: rgb(120, 180, 130) !important;
-    --interactive-active: rgb(133, 255, 150) !important;
-    --header-primary: rgb(180, 240, 190) !important;
-    --header-secondary: rgb(140, 200, 150) !important;
-     
+    --text-brand: #4CAF50 !important;
+    --text-normal: #4CAF50 !important;
+    --text-muted: #689F38 !important;
+    --interactive-normal: #689F38 !important;
+    --interactive-active: #4CAF50 !important;
+    --header-primary: #81C784 !important;
+    --header-secondary: #66BB6A !important;
+
     /* State colors */
-    --green-bright-color: rgb(143, 255, 133) !important;
-    --green-dark-color: rgba(34, 123, 22) !important;
-    --hover-green-color: rgba(46, 123, 22, 0.3) !important;
-    --hover-green-bright-color: rgba(41, 199, 27, 0.8) !important;
-    --hover-green-dark-color: rgba(34, 123, 22, 0.8) !important;
+    --green-bright-color: #66BB6A !important;
+    --green-dark-color: #388E3C !important;
+    --hover-green-color: #388E3C33 !important;
+    --hover-green-bright-color: #66BB6ACC !important;
+    --hover-green-dark-color: #388E3CCC !important;
 
     --yellow-bright-color: rgb(255, 202, 110) !important;
     --yellow-dark-color: rgba(201, 127, 0) !important;

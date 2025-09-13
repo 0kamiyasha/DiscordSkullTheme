@@ -37,13 +37,13 @@
 :root {
     /* Dark Forest accents - deep forest greens */
     --main-color: rgba(34, 89, 45, 1) !important;
-    --hover-faded-color: rgba(15, 35, 20, 0.95) !important;
-    --soft-bright-color: rgb(140, 255, 160) !important;
+    --dark-bg: rgba(12, 25, 15, 0.95) !important;
+    --soft-bright-color: #4CAF50 !important;
     --hover-color: rgba(34, 89, 45, 0.3) !important;
     --hover-faded-color: rgba(34, 89, 45, 0.2) !important;
     --hover-faint-color: rgba(34, 89, 45, 0.1) !important;
     --hover-dark-color: rgba(34, 89, 45, 0.8) !important;
-    --hover-bright-color: rgba(76, 175, 80, 0.8) !important;
+    --hover-bright-color: #4CAF50 !important;
 
     /* Background options */
     --background-blur: 0px !important;
