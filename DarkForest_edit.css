@@ -17238,7 +17238,7 @@ body::after,
 .auth-background,
 .auth-tiling-bg,
 .invite-modal .invite-splash {
-    background-image: var(--kyanite-background-image, url("https://raw.githubusercontent.com/0kamiyasha/DiscordSkullTheme/refs/heads/main/neonskull.jpg")) !important;
+    background-image: var(--kyanite-background-image, url("https://raw.githubusercontent.com/0kamiyasha/DiscordSkullTheme/refs/heads/main/DarkForest.jpg")) !important;
 }
 
 /* Kyanite-specific message and UI styling */
