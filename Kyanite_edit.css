@@ -115,6 +115,7 @@
     width: auto !important;
     max-width: none !important;
     overflow-x: visible !important;
+    font-weight: 600 !important;
 }
 
 /* Ensure proper spacing for floating elements */
@@ -179,6 +180,7 @@ body::after,
 .wrapper_fc8177,
 .container__01ae2 {
     background-color: transparent !important;
+    font-weight: 600 !important;
 }
 body::after {
     z-index: -9999 !important;
@@ -10176,6 +10178,7 @@ img.sidebarHeader__0ab2c {
 .actionIcon_c69b6d,
 .pencilIcon__5cda9 {
     color: var(--hover-bright-color) !important;
+    font-weight: 600 !important;
 }
 .name_f37cb1,
 .button__353c4,
