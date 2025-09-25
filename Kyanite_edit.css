@@ -1,3 +1,8 @@
+/* Font weight fix for overflow elements */
+.overflowTooltip__972a0,
+.overflow__82b15 {
+    font-weight: 600 !important;
+}
 /* Shift gameWrapper right by 5px */
 .gameWrapper__8c6c2 {
     position: relative;
