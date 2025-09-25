@@ -1,16 +1,18 @@
 b > span,
 strong > span {
     font-weight: 800 !important;
-}
-/* Kyanite global font weight reset */
-* {
-    font-family: "Space Grotesk", sans-serif !important;
-    font-weight: 600 !important;
+    color: var(--main-color) !important;
 }
 b, strong, h1, h2, h3, h4, h5, h6,
 span b, span strong, span h1, span h2, span h3, span h4, span h5, span h6,
 strong span, b span {
     font-weight: 800 !important;
+    color: var(--main-color) !important;
+}
+/* Kyanite global font weight reset */
+* {
+    font-family: "Space Grotesk", sans-serif !important;
+    font-weight: 600 !important;
 }
 /* Shift gameWrapper right by 5px */
 .gameWrapper__8c6c2 {
@@ -26,7 +28,7 @@ strong span, b span {
 :root {
     /* Kyanite accents */
      --main-color: rgba(22, 91, 123, 1) !important; 
-    --dark-bg: rgba(7, 22, 37, 0.95) !important; 
+     --dark-bg: rgba(7, 22, 37, 0.95) !important; 
      --soft-bright-color: rgb(133, 206, 255) !important; 
      --hover-color: rgba(22, 91, 123, 0.3) !important; 
      --hover-faded-color: rgba(22, 91, 123, 0.2) !important; 
