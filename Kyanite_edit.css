@@ -1,3 +1,11 @@
+/* Font weight fix for content_c48ade */
+.content_c48ade {
+    font-weight: 600 !important;
+}
+.content_c48ade b,
+.content_c48ade strong {
+    font-weight: 800 !important;
+}
 /* Font weight fix for overflow elements */
 .overflowTooltip__972a0,
 .overflow__82b15 {
