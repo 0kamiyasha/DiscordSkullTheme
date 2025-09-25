@@ -28,21 +28,6 @@
     -webkit-transform: none !important;
 }
 
-
-
-
-/* Kyanite-specific font override */
-body, .appMount_c99875, .app_b1f720 {
-    font-family: "Space Grotesk", sans-serif !important;
-    font-weight: 600 !important;
-}
-b, strong, h1, h2, h3, h4, h5, h6 {
-    font-weight: 800 !important;
-}
-
-
-
-
 /* Kyanite color palette and background options */
 :root {
     /* Kyanite accents */
