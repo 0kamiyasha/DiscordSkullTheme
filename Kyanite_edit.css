@@ -4,7 +4,8 @@
     font-weight: 600 !important;
 }
 b, strong, h1, h2, h3, h4, h5, h6,
-span b, span strong, span h1, span h2, span h3, span h4, span h5, span h6 {
+span b, span strong, span h1, span h2, span h3, span h4, span h5, span h6,
+strong span, b span {
     font-weight: 800 !important;
 }
 /* Shift gameWrapper right by 5px */
