@@ -9998,15 +9998,16 @@ img.sidebarHeader__0ab2c {
 .mention:hover {
     text-decoration: none !important;
 }
-.wrapper_f61d60 {
+.wrapper_f61d60:not(.roleMention__75297) {
     padding: none !important;
     background-color: var(--hover-color) !important;
     color: var(--soft-bright-color) !important;
 }
-.wrapper_f61d60:hover {
+.wrapper_f61d60:not(.roleMention__75297):hover {
     background-color: var(--hover-dark-color) !important;
 }
 
+/* Tags */
 /* Tags */
 .botTagRegular__82f07,
 .botTag__5d473,
